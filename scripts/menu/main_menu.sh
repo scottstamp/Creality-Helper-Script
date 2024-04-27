@@ -2,7 +2,8 @@
 
 set -e
 
-if /usr/bin/get_sn_mac.sh model 2>&1 | grep -iq "K1"; then K1=1; else K1=0; fi
+#if /usr/bin/get_sn_mac.sh model 2>&1 | grep -iq "K1"; then K1=1; else K1=0; fi
+K1=1;
 
 function get_script_version() {
   local version
